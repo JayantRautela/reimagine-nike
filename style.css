@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page1 {
+    height: 100%;
+    width: 100%;
+    /* background-color: #fbecec; */
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+}
+
+.heading {
+    overflow-y: hidden;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.navbar-right p {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+
+.navbar-right p::before,
+.navbar-right p::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.navbar-right p::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #889381;
+    border-right: 3px solid #50544e;
+    transform: translate(-100%, 50%);
+}
+
+.navbar-right p:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #889381;
+    border-left: 3px solid #50544e;
+    transform: translate(100%, -50%)
+}
+
+.navbar-right p:hover:before,
+.navbar-right p:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.navbar-right p:hover {
+    color: #c48f8f;
+}
+
+
+/* .navbar-right p::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    background-color: #d3f1ed;
+    transition: 0.18s;
+    transition-timing-function: ease;
+}
+
+.navbar-right p:hover::after{
+    width: 100%;
+} */
+
+.hero-section {
+    /* background-color: red; */
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.hero-section h1 {
+    font-size: 7rem;
+}
