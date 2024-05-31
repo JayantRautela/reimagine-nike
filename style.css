@@ -158,3 +158,30 @@ body {
         opacity: 0;
     }
 }
+
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    padding: 8vh 5vw;
+    text-align: center;
+}
+
+.page2 h1{
+    font-size: 3rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #c48f8f;
+    letter-spacing: 0.3vw;
+}
+
+.wrapper{
+    display: flex;
+    padding: 10vh 0;
+    gap: 2vw;
+    overflow-x: hidden;
+}
+
+.wrapper img{
+    height: 50vh;
+}
