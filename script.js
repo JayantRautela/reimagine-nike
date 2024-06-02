@@ -33,3 +33,15 @@ animatePage1();
 
 
 //animations for page2.
+gsap.to(".page2 .wrapper .image-container", {   
+    x: -995,
+    scrollTrigger: {
+        trigger: ".page2",
+        scroller: "body",
+        start: "top 0%",
+        end: "top -150%",
+        // markers: true,
+        scrub: 1,
+        pin: true
+    }
+})
