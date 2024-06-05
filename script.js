@@ -33,6 +33,15 @@ animatePage1();
 
 
 //animations for page2.
+gsap.from(".page2 h1", {
+    y: -50,
+    scrollTrigger: {
+        trigger: ".page2 h1",
+        scroller: "body"
+    }
+})
+
+
 gsap.to(".page2 .wrapper .image-container", {   
     x: -995,
     scrollTrigger: {
